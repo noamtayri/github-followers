@@ -1,0 +1,14 @@
+.followers-list-list-item {
+  border-radius: 4px;
+}
+
+.followers-list-list-item:hover {
+  cursor: pointer;
+  background-color: rgba(25, 118, 210, 0.04);
+}
+
+.followers-list-list-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
