@@ -15,6 +15,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Alerts } from './Alerts';
 import debounce from 'lodash.debounce';
+import './GithubFollowersPage.scss';
 
 export function GithubFollowersPage() {
   const account = useAppSelector((state) => state.account.account);
@@ -58,7 +59,13 @@ export function GithubFollowersPage() {
       alignItems="center"
       flexDirection="column"
     >
-      <Typography variant="h2" gutterBottom color="rgba(25, 118, 210, 0.9)">
+      <Typography
+        className="github-followers-title"
+        onClick={() => window.location.replace(window.location.href)}
+        variant="h2"
+        gutterBottom
+        color="rgba(25, 118, 210, 0.9)"
+      >
         GitHub Followers
       </Typography>
       <Box marginBottom={2}>
